@@ -64,6 +64,8 @@ if(needed_coderate>=.25)%0.5 && needed_coderate<.6)
     end
 end
 dvb.NumSymsPerCodeword = dvb.LDPCCodewordLength/dvb.BitsPerSymbol;
+dvb.use_bch = use_bch
+dvb.use_interleaver = use_interleaver
 
 hBCHEnc = comm.BCHEncoder('CodewordLength', dvb.BCHCodewordLength, ...
     'MessageLength', dvb.BCHMessageLength, ...
