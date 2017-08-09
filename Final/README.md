@@ -1,4 +1,4 @@
-##Instructions:
+## Instructions:
 - Use encode_maher
 ```matlab
   [dvb,Enc_bitSET,b4Enc_bitSET,frame1234] = encode_maher(needed_coderate, num_frames, subsystemType_code, save_encbits, use_bch , use_interleaver)
@@ -10,7 +10,7 @@
 ```
 - Compare this decoded data with the b4Enc_bitSET (or the first k bits of the frame) to check the BER.
 
-##encode_maher
+## encode_maher
 
 Picks nearest standard code to puncture.
 
@@ -33,7 +33,7 @@ Hmatrix_rate<needed_coderate>.mat
     
         frame1234 : after running split_bitstream.m to format the data.
         
-##decode_maher
+## decode_maher
 
 Input: 
 
